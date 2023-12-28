@@ -39,7 +39,7 @@
 
         lower_layer {
             bindings = <
-&kp ESC             &kp F1    &kp F2  &kp F3    &kp F4    &kp F5     &kp F6     &kp F7    &kp F8    &kp F9    &kp F10   &kp RIGHT_BRACKET
+&gresc              &kp F1    &kp F2  &kp F3    &kp F4    &kp F5     &kp F6     &kp F7    &kp F8    &kp F9    &kp F10   &kp RIGHT_BRACKET
 &mt LEFT_ALT GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &mt RCTRL MINUS
 &trans              &kp N1    &kp N2  &kp N3    &kp N4    &kp N5     &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &mt RIGHT_SHIFT EQUAL
                                       &trans    &trans    &trans     &trans     &trans    &trans
@@ -57,10 +57,10 @@
 
         adjust_layer {
             bindings = <
-&bootloader  &none  &kp LS(LA(LC(LG(W))))  &kp LS(LA(LC(LG(E))))  &kp LS(LA(LC(LG(R))))  &kp LS(LA(LC(LG(T))))  &none         &none         &none         &none         &none         &bootloader
-&none        &none  &kp LS(LA(LC(LG(S))))  &none                  &none                  &none                  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-&sys_reset   &none  &none                  &none                  &none                  &none                  &none         &none         &none         &none         &none         &sys_reset
-                                           &trans                 &none                  &trans                 &none         &trans        &trans
+&bootloader  &none  &kp RS(RA(RC(RG(LG(W)))))  &kp LS(LA(LC(LG(E))))  &kp LS(LA(LC(LG(R))))  &kp LS(LA(LC(LG(T))))  &none         &none         &none         &none         &none         &bootloader
+&none        &none  &kp LS(LA(LC(LG(S))))      &none                  &none                  &none                  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
+&sys_reset   &none  &none                      &none                  &none                  &none                  &none         &none         &none         &none         &none         &sys_reset
+                                               &trans                 &none                  &trans                 &none         &trans        &trans
             >;
         };
     };
