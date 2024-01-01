@@ -39,28 +39,28 @@
 
         lower_layer {
             bindings = <
-&gresc              &kp F1    &kp F2  &kp F3    &kp F4    &kp F5     &kp F6     &kp F7    &kp F8    &kp F9    &kp F10   &kp RIGHT_BRACKET
-&mt LEFT_ALT GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &mt RCTRL MINUS
-&trans              &kp N1    &kp N2  &kp N3    &kp N4    &kp N5     &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &mt RIGHT_SHIFT EQUAL
-                                      &trans    &trans    &trans     &trans     &trans    &trans
+&gresc           &kp F1    &kp F2  &kp F3    &kp F4    &kp F5     &kp F6     &kp F7    &kp F8    &kp F9    &kp F10   &kp RIGHT_BRACKET
+&mt LCTRL TILDE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &mt RCTRL MINUS
+&trans           &kp N1    &kp N2  &kp N3    &kp N4    &kp N5     &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &mt RIGHT_SHIFT EQUAL
+                                   &trans    &trans    &trans     &trans     &trans    &trans
             >;
         };
 
         raise_layer {
             bindings = <
-&trans              &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp PG_UP          &kp HOME       &kp UP    &kp END     &kp PAGE_DOWN   &none
-&mt LEFT_ALT EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp LC(LEFT)       &kp LEFT       &kp DOWN  &kp RIGHT   &kp LC(RIGHT)   &trans
-&kp LALT            &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &kp LC(BACKSPACE)  &kp BACKSPACE  &none     &kp DELETE  &kp LC(DELETE)  &trans
-                                                &trans     &trans     &trans        &trans             &trans         &trans
+&trans           &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp PG_UP          &kp HOME       &kp UP    &kp END     &kp PAGE_DOWN   &none
+&mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp LC(LEFT)       &kp LEFT       &kp DOWN  &kp RIGHT   &kp LC(RIGHT)   &trans
+&trans           &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &kp LC(BACKSPACE)  &kp BACKSPACE  &none     &kp DELETE  &kp LC(DELETE)  &trans
+                                             &trans     &trans     &trans        &trans             &trans         &trans
             >;
         };
 
         adjust_layer {
             bindings = <
-&bootloader  &none  &kp RS(RA(RC(RG(LG(W)))))  &kp LS(LA(LC(LG(E))))  &kp LS(LA(LC(LG(R))))  &kp LS(LA(LC(LG(T))))  &kp PRINTSCREEN  &kp KP_NUMLOCK  &none   &none         &none         &bootloader
-&none        &none  &kp LS(LA(LC(LG(S))))      &kp RS(RA(RC(RG(D))))  &kp RS(RA(RC(RG(F))))  &none                  &none            &none           &none   &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-&sys_reset   &none  &none                      &none                  &none                  &none                  &none            &none           &none   &none         &none         &sys_reset
-                                               &trans                 &none                  &trans                 &none            &trans          &trans
+&bootloader  &none                  &kp RS(RA(RC(RG(W))))  &kp RS(RA(RC(RG(E))))  &kp RS(RA(RC(RG(R))))  &kp RS(RA(RC(RG(T))))  &kp PRINTSCREEN  &kp KP_NUMLOCK  &none   &none         &none         &bootloader
+&none        &kp RS(RA(RC(RG(A))))  &kp RS(RA(RC(RG(S))))  &kp RS(RA(RC(RG(D))))  &kp RS(RA(RC(RG(F))))  &kp RA(RS(RC(RG(G))))  &none            &none           &none   &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
+&sys_reset   &none                  &none                  &none                  &none                  &none                  &none            &none           &none   &none         &none         &sys_reset
+                                                           &trans                 &none                  &trans                 &none            &trans          &trans
             >;
         };
     };
